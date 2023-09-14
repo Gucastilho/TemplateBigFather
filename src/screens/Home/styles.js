@@ -57,13 +57,32 @@ viewTitle:{
     padding:15,
 },
 
+viewSemiTitle:{
+    marginLeft:35,
+    marginTop:8,
+},
+
 textSemiTitle:{
     color:"#fff",
-    fontSize:15,
-
+    fontSize:20,
 },
 
 boby:{
+    flexDirection:"row",
+    alignItems:"center",
+    justifyContent:"center",
 
 },
+
+viewSemiTitleGin:{
+    marginLeft:35,
+    marginTop:20,
+},
+
+viewBodyMenu:{
+    justifyContent:"center",
+    alignItems:"center",
+    marginBottom: 22,
+}
+
 })
