@@ -4,45 +4,66 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create ({
 
 container:{
-    backgroundColor: "#373737",
+    backgroundColor: "#212121",
     flex: 1,
+    
 },
 
 textTitle:{
 color: "#FFF",
+fontSize:25,
 
 },
 
 header:{
-backgroundColor: "red",
-
+marginTop:20,
+padding:30,
+flexDirection:"row",
+justifyContent:"space-between",
+alignItems:"center",
 
 },
 
-boby:{
-flex: 1,
-width: '100%',
-flexDirection: 'row',
-marginTop: 36,
-marginBottom : 42,
-marginRight: 40,
-
-
+search:{
+    justifyContent:"center",
+    flexDirection:"row",
+    alignItems:"center",
+    borderColor:"rgba(144,149,160,0.5)",
+    borderStyle:"solid",
+    borderWidth: 1,
+    borderTopLeftRadius:40,
+    borderBottomLeftRadius:40,
+    borderTopRightRadius:40,
+    borderBottomRightRadius:40,
+    padding:10,
+   
+    
 
 },
 
 input:{
-    backgroundColor: "green",
-    width: 100,
-    height: 20,
-    justifyContent: "center",
-    alignItems: "center",
-    color: "#FFF",
-    marginRight: 60,
+    width:246,
+    height:30,
+    marginLeft:10,  
+},
+
+searchIcon: {
+    paddingLeft: 20,
+
+},
 
 
-}
+viewTitle:{
+    padding:15,
+},
 
+textSemiTitle:{
+    color:"#fff",
+    fontSize:15,
 
+},
 
+boby:{
+
+},
 })
