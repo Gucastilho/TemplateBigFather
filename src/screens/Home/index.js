@@ -54,7 +54,7 @@ export function Home() {
     </ScrollView>
       <View>
         <View style={styles.viewBodyMenu}>
-         <BodyMenu/>
+         <BodyMenu></BodyMenu>
 
         </View>
       </View>
