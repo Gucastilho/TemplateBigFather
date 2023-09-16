@@ -5,12 +5,13 @@ import { styles } from "./sytles";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
+import { NavigationContainer } from '@react-navigation/native';
 
 
 export function BodyMenu() {
   return (
 
-   
+   <NavigationContainer>
     <View style={styles.bobyMenu}>
       <View>
       <TouchableOpacity>
@@ -38,6 +39,7 @@ export function BodyMenu() {
         </TouchableOpacity>
       </View>
     </View>
+    </NavigationContainer>
     
   );
 }

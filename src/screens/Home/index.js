@@ -5,6 +5,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { BodyMenu } from "../../component/bodyMenu/Index";
 import { VideoCastis } from "../../component/videoCastis";
 import { ItensBebidas, itensBebidas } from "../../component/itemBebidas/item-bebidas";
+import {AdicionarBebidas} from '../AdicionarBebidas';
 import { Audio } from 'expo-av';
 import {
   Text,
@@ -57,7 +58,7 @@ export function Home() {
     </ScrollView>
       <View>
         <View style={styles.viewBodyMenu}>
-         <BodyMenu></BodyMenu>
+        <BodyMenu></BodyMenu>
          
         </View>
       </View>
