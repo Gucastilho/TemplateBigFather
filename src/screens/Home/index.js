@@ -3,7 +3,9 @@ import React from "react";
 import { Octicons } from '@expo/vector-icons'; 
 import { AntDesign } from '@expo/vector-icons'; 
 import { BodyMenu } from "../../component/bodyMenu/Index";
+import { VideoCastis } from "../../component/videoCastis";
 import { ItensBebidas, itensBebidas } from "../../component/itemBebidas/item-bebidas";
+import { Audio } from 'expo-av';
 import {
   Text,
   TextInput,
@@ -12,11 +14,15 @@ import {
   StyleSheet,
   Image,
   ScrollView,
+  FlatList,
 } from "react-native";
 import { styles } from "./styles";
 import { Imprima_400Regular } from "@expo-google-fonts/dev";
 
 export function Home() {
+
+  
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -30,18 +36,11 @@ export function Home() {
         <Text style={styles.textTitle}>Encontre sua bebida favorita e compre no melhor valor</Text>
       </View>
     <ScrollView>
-      <View style={styles.viewSemiTitle}>
-        <Text style={styles.textSemiTitle}>Vodka</Text>
-      </View>
-      <View style={styles.boby}>
-        <ItensBebidas />
-        <ItensBebidas />
-      </View>
       <View style={styles.viewSemiTitleGin}>
         <Text style={styles.textSemiTitle}>Gin</Text>
       </View>
       <View style={styles.boby}>
-        <ItensBebidas />
+        <ItensBebidas/>
         <ItensBebidas />
       </View>
       <View style={styles.viewSemiTitleGin}>
@@ -51,11 +50,15 @@ export function Home() {
         <ItensBebidas />
         <ItensBebidas />
       </View>
+      <View style={styles.viewtextTitleVideo}>
+        <Text style={styles.textTitle}>Conheça nosso espaço para tomar seu drink de qualidade</Text>
+      </View>
+      <VideoCastis></VideoCastis>
     </ScrollView>
       <View>
         <View style={styles.viewBodyMenu}>
          <BodyMenu></BodyMenu>
-
+         
         </View>
       </View>
     </View>

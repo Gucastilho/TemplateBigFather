@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
-
 export const styles = StyleSheet.create ({
+
 
 container:{
     backgroundColor: "#212121",
@@ -83,6 +83,15 @@ viewBodyMenu:{
     justifyContent:"center",
     alignItems:"center",
     marginBottom: 22,
-}
+},
+
+viewtextTitleVideo:{
+    marginTop:40,
+    padding:10,
+    
+
+},
+
+
 
 })
