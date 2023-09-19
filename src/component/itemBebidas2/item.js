@@ -1,25 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { Text, TouchableOpacity, View, Image, Button } from "react-native";
 import { styles } from "./styles";
-import iconpng from '../../../assets/icon.png';
 import { Audio } from 'expo-av'; // Import Audio from expo-av
-import absolutVodka1 from '../../../assets/absolutVodka1.png'
 
-export function ItensBebidas() {
+
+export function ItensBebidas2({imagem,nomeBebida,valor}) {
   const [audioStatus, setAudioStatus] = useState(false);
   const [sound, setSound] = useState(new Audio.Sound());
 
   
-  return (
+  return <>
     <View style={styles.backgroundBebidas}>
       <View style={styles.viewDrinks}>
-        <Image style={styles.imageDrinks} source={absolutVodka1} />
+        <Image style={styles.imageDrinks} source={imagem} />
       </View>
       <View style={styles.infoDrinks}>
-        <Text style={styles.textInfoDrinks}>Absolute Pears</Text>
+        <Text style={styles.textInfoDrinks}>{nomeBebida}</Text>
       </View>
       <View>
-        <Text style={styles.textInfoDrinks}>R$199.99</Text>
+        <Text style={styles.textInfoDrinks}>{valor}</Text>
       </View>
       <View style={styles.viewTouchableOpacityDrinks}>
         <TouchableOpacity style={styles.TouchableOpacityDrinks}>
@@ -27,5 +26,5 @@ export function ItensBebidas() {
         </TouchableOpacity>
       </View>
     </View>
-  );
+</>
 }
