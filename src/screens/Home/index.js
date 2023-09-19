@@ -5,7 +5,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { BodyMenu } from "../../component/bodyMenu/Index";
 import { VideoCastis } from "../../component/videoCastis";
 import { ItensBebidas, itensBebidas } from "../../component/itemBebidas/item-bebidas";
-import { ItensBebidas2 } from "../../component/itemBebidas2/item";
+import Catalogo  from "../../component/itemBebidas2/index";
 import { Audio } from 'expo-av';
 import {
   Text,
@@ -48,8 +48,7 @@ export function Home() {
         <Text style={styles.textSemiTitle}>Whisky</Text>
       </View>
       <View style={styles.boby}>
-          <ItensBebidas2/>
-        
+         <Catalogo /> 
       </View>
       <View style={styles.viewtextTitleVideo}>
         <Text style={styles.textTitle}>Conheça nosso espaço para tomar seu drink de qualidade</Text>

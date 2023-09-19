@@ -1,9 +1,9 @@
-import { React } from "react";
+import  React from "react";
 import { FlatList } from "react-native";
 import bebida2 from "../../../assets/absolutVodka2.png";
 import bebida1 from "../../../assets/absolutVodka1.png";
-import bebida3 from "../../../assets/absolutVodka3.png";
-import { ItensBebidas2 } from "./item";
+import bebida3 from "../../../assets/AbsolutVodka3.png";
+import ItensBebidas2 from "./item";
 
 const catalogo = [
   {
@@ -29,15 +29,11 @@ const catalogo = [
 
 export default function catalogo1() {
   return (
-    <ItensBebidas2>
       <FlatList
+            horizontal={true}
             data={catalogo}
-            renderItem={({ItensBebidas2}) => (<ItensBebidas2 {...ItensBebidas2}/>)}
+            renderItem={({item}) => <ItensBebidas2 {...item}/>}
             keyExtractor={({id})=> (String(id))}
       />
-            
-
-      
-    </ItensBebidas2>
   );
 }
