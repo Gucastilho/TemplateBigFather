@@ -2,6 +2,7 @@ import React from "react";
 import { View, Button,Text } from "react-native";
 import { Video, ResizeMode } from "expo-av";
 import { styles } from "./styles";
+import {VideoDrinks} from "../../../assets/VídeoDrinks.mp4" 
 
 export function VideoCastis() {
   const video = React.useRef(null);
@@ -14,9 +15,9 @@ export function VideoCastis() {
         <Video 
           ref={video}
           style={styles.video}
-          source={{
-            uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
-          }}
+          source={require("../../../assets/VídeoDrinks.mp4")
+            
+          }
           useNativeControls
           resizeMode={ResizeMode.CONTAIN}
           isLooping
