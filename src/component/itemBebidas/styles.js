@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
 
     backgroundBebidas:{
         width: 161,
-        height: 226,
+        height: 250,
         borderRadius: 14,
         backgroundColor: '#424242',
         marginRight: 30,
@@ -21,8 +21,8 @@ export const styles = StyleSheet.create({
     },
 
     imageDrinks:{
-        width: 70,
-        height:115,
+        width: 30,
+        height:110,
         marginTop: 10,
         borderRadius:10,
         
@@ -52,6 +52,7 @@ export const styles = StyleSheet.create({
         borderRadius: 30,
         justifyContent:"center",
         alignItems:"center",
+        
     },
 
    textComprar:{

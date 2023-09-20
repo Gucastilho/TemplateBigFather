@@ -4,7 +4,8 @@ import { Octicons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons'; 
 import { BodyMenu } from "../../component/bodyMenu/Index";
 import { VideoCastis } from "../../component/videoCastis";
-import { ItensBebidas, itensBebidas } from "../../component/itemBebidas/item-bebidas";
+import { ItensBebidas, itensBebidas } from "../../component/itemBebidas";
+import Catalogo2 from "../../component/itemBebidas";
 import Catalogo  from "../../component/itemBebidas2/index";
 import { Audio } from 'expo-av';
 import {
@@ -41,11 +42,11 @@ export function Home() {
         <Text style={styles.textSemiTitle}>Gin</Text>
       </View>
       <View style={styles.boby}>
-        <ItensBebidas/>
+        <Catalogo2/>
         
       </View>
       <View style={styles.viewSemiTitleGin}>
-        <Text style={styles.textSemiTitle}>Whisky</Text>
+        <Text style={styles.textSemiTitle}>Vodkas</Text>
       </View>
       <View style={styles.boby}>
          <Catalogo /> 
