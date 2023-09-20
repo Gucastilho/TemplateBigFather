@@ -5,6 +5,10 @@ import bebida1 from "../../../assets/absolutVodka1.png";
 import bebida3 from "../../../assets/AbsolutVodka3.png";
 import ItensBebidas2 from "./item";
 
+
+
+
+
 const catalogo = [
   {
     id: "bebida1",

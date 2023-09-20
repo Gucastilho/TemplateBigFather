@@ -1,12 +1,31 @@
-import React, { useState, useEffect } from "react";
-import { Text, TouchableOpacity, View, Image, Button } from "react-native";
+import React, {useState} from "react";
+import { Text, TouchableOpacity, View, Image, } from "react-native";
 import { styles } from "./styles";
-import Audio from 'expo-av'; // Import Audio from expo-av
+import { Audio } from 'expo-av';
+
+
 
 
 export default function ItensBebidas2({imagem,nomeBebida,valor}) {
-  // const [audioStatus, setAudioStatus] = useState(false);
-  // const [sound, setSound] = useState(new Audio.Sound());
+
+  const [sound,setSound] = useState();
+
+  const tocaSom = async () => {
+
+    const {sound} = await Audio.Sound.createAsync(
+      require("../../../assets/audioCompra.mp3")
+    );
+
+    setSound(sound);
+
+    await sound.playAsync();
+
+
+
+  }
+  
+
+  
 
   
   return <>
@@ -21,7 +40,7 @@ export default function ItensBebidas2({imagem,nomeBebida,valor}) {
         <Text style={styles.textInfoDrinks}>{valor}</Text>
       </View>
       <View style={styles.viewTouchableOpacityDrinks}>
-        <TouchableOpacity style={styles.TouchableOpacityDrinks}>
+        <TouchableOpacity style={styles.TouchableOpacityDrinks} onPress={tocaSom}>
           <Text style={styles.textComprar}>COMPRAR</Text>
         </TouchableOpacity>
       </View> 
