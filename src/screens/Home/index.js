@@ -31,7 +31,11 @@ export function Home() {
         <Octicons name="three-bars" size={24} color="#fff" />
         <View style={styles.search}>
         <AntDesign name="search1" size={24} color="#FFF" />
-        <TextInput style={styles.input}></TextInput>
+        <TextInput placeholder="Search Product"
+          placeholderTextColor='#737373'
+         style={styles.input}>
+
+         </TextInput>
         </View>
       </View>
       <View style={styles.viewTitle}>

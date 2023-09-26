@@ -45,6 +45,7 @@ input:{
     width:246,
     height:30,
     marginLeft:10,  
+    color: '#fff',
 },
 
 searchIcon: {
