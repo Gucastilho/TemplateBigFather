@@ -11,7 +11,7 @@ import { NavigationContainer } from '@react-navigation/native';
 export function BodyMenu() {
   return (
 
-   <NavigationContainer>
+    <NavigationContainer>
     <View style={styles.bobyMenu}>
       <View>
       <TouchableOpacity>
@@ -39,7 +39,7 @@ export function BodyMenu() {
         </TouchableOpacity>
       </View>
     </View>
-    </NavigationContainer>
+    </NavigationContainer> 
     
   );
 }

@@ -8,13 +8,14 @@ import { TelaAdicionarBebidas } from './src/screens/AdicionarBebidas';
 
 
 
+
 export default function App() {
 
  
 
   return <> 
-      <StatusBar />
-       <Home/>
+      <Home />
+       
       </>
   
 }
